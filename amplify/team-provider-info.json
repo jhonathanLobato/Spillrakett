@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-spillrakett-dev-100021-authRole",
+      "UnauthRoleArn": "arn:aws:iam::166988775472:role/amplify-spillrakett-dev-100021-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::166988775472:role/amplify-spillrakett-dev-100021-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-spillrakett-dev-100021-deployment",
+      "UnauthRoleName": "amplify-spillrakett-dev-100021-unauthRole",
+      "StackName": "amplify-spillrakett-dev-100021",
+      "StackId": "arn:aws:cloudformation:us-east-1:166988775472:stack/amplify-spillrakett-dev-100021/aae4d820-5c40-11ed-a21f-12c92c15d0df",
+      "AmplifyAppId": "d1wq6cuoaxq5ab"
+    },
+    "categories": {
+      "api": {
+        "spillrakett": {}
+      },
+      "auth": {
+        "spillrakett655da8a7": {}
+      }
+    }
+  }
+}
