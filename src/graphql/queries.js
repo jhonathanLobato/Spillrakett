@@ -11,6 +11,7 @@ export const getGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -29,6 +30,7 @@ export const listGames = /* GraphQL */ `
         image
         createdAt
         updatedAt
+        owner
       }
       nextToken
     }

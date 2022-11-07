@@ -17,6 +17,15 @@
       },
       "auth": {
         "spillrakett655da8a7": {}
+      },
+      "function": {
+        "S3Trigger91bc4633": {
+          "deploymentBucketName": "amplify-spillrakett-dev-100021-deployment",
+          "s3Key": "amplify-builds/S3Trigger91bc4633-6d4d68744a7659497170-build.zip"
+        }
+      },
+      "storage": {
+        "gqls3": {}
       }
     }
   }

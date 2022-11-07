@@ -1,5 +1,11 @@
 {
   "AppSyncApiName": "spillrakett",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authspillrakett655da8a7",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

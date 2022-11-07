@@ -1,7 +1,17 @@
-type Game @model{
+type Game @model
+@auth(rules: [
+      { allow: owner },
+      { allow: private, operations: [read] },
+      { allow: public, operations: [read] }
+  ]){
   id: ID!
   name: String!
   description: String
   price: Float
   image: String
+  @auth(rules: [
+      { allow: owner },
+      { allow: private, operations: [read] },
+      { allow: public, operations: [read] }
+  ])
 }

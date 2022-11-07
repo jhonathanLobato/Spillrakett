@@ -1,6 +1,6 @@
 /* src/App.js */
 import React, { useEffect, useState } from 'react'
-import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import { Amplify, API, graphqlOperation, input, Storage } from 'aws-amplify'
 import { createGame } from './graphql/mutations'
 import { listGames } from './graphql/queries'
 import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
@@ -35,6 +35,7 @@ const App = ({signOut, user}) => {
     try {
       if (!formState.name || !formState.description) return
       const game = { ...formState }
+      await Storage.put(formState.image, )
       setGames([...games, game])
       setFormState(initialState)
       await API.graphql(graphqlOperation(createGame, {input: game}))
@@ -68,6 +69,13 @@ const App = ({signOut, user}) => {
         value={formState.price}
         placeholder="Price"
       />
+      <input
+        onChange={event => setInput('image', event.target.value)}
+        style={styles.input}
+        type='file'
+        value={formState.image}
+        placeholder="Select Image"
+      />
       <button style={styles.button} onClick={addGame}>Create Game</button>
       {
         games.map((game, index) => (
@@ -75,6 +83,7 @@ const App = ({signOut, user}) => {
             <p style={styles.gameName}>{game.name}</p>
             <p style={styles.gameDescription}>{game.description}</p>
             <p style={styles.gamePrice}>{game.price}</p>
+            <img src={game.image}/>
           </div>
         ))
       }

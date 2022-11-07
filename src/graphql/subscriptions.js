@@ -2,8 +2,11 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateGame = /* GraphQL */ `
-  subscription OnCreateGame($filter: ModelSubscriptionGameFilterInput) {
-    onCreateGame(filter: $filter) {
+  subscription OnCreateGame(
+    $filter: ModelSubscriptionGameFilterInput
+    $owner: String
+  ) {
+    onCreateGame(filter: $filter, owner: $owner) {
       id
       name
       description
@@ -11,12 +14,16 @@ export const onCreateGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onUpdateGame = /* GraphQL */ `
-  subscription OnUpdateGame($filter: ModelSubscriptionGameFilterInput) {
-    onUpdateGame(filter: $filter) {
+  subscription OnUpdateGame(
+    $filter: ModelSubscriptionGameFilterInput
+    $owner: String
+  ) {
+    onUpdateGame(filter: $filter, owner: $owner) {
       id
       name
       description
@@ -24,12 +31,16 @@ export const onUpdateGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onDeleteGame = /* GraphQL */ `
-  subscription OnDeleteGame($filter: ModelSubscriptionGameFilterInput) {
-    onDeleteGame(filter: $filter) {
+  subscription OnDeleteGame(
+    $filter: ModelSubscriptionGameFilterInput
+    $owner: String
+  ) {
+    onDeleteGame(filter: $filter, owner: $owner) {
       id
       name
       description
@@ -37,6 +48,7 @@ export const onDeleteGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;

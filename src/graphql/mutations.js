@@ -14,6 +14,7 @@ export const createGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -30,6 +31,7 @@ export const updateGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -46,6 +48,7 @@ export const deleteGame = /* GraphQL */ `
       image
       createdAt
       updatedAt
+      owner
     }
   }
 `;
