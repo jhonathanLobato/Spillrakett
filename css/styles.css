@@ -4,6 +4,10 @@
 	margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 .subTitulo{
     color: var(--subTitulo)
 }
@@ -11,13 +15,13 @@
 .menuPrincipal{
     display: grid;
     margin: 50px 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 55vh 60vh 60vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 60vh 60vh 55vh 75vh 40vh;
 }
 
 .carrossel .carrosselImagens{
 	vertical-align: top;
-	margin: 0 1.5%;
+	margin: 0px;
 	padding: 10px 10px;
     /*
 	box-sizing: border-box;
@@ -66,9 +70,6 @@
 .cabecalhoPrincipal-nav-link {
 	padding: 10px;
 	margin-bottom: 10px;
-	color: #9799A6;
-	text-decoration: none;
-	transition: .5s;
 }
 
 .cabecalhoPrincipal {
@@ -76,22 +77,39 @@
 }
 /*----------------------------*/
 
+/* Input de pesquisa */
+.banner{
+    width: 300px;
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--cinza);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--subTitulo);
+    background: url("/icones/Lupa.svg") no-repeat;
+    background-position: 1em;
+}
+
 
     /*Menu Principal*/
 /* Menu lateral */
 /* Adicionando um efeito vidro no menu */
 .menuLateral{
-	height: 700px;
+	height: 650px;
 	margin: 0px 20px;
-	border: solid;
-	border-width: 1px;
-	border-color: #9799A6;
-	border-radius: 15px;
-	background: rgba( 255, 255, 255, 0.35 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgb(32, 32, 32);
+    border-radius: 15px;
 }
 
 .sessoesLateral{
@@ -99,34 +117,30 @@
 }
 
 .sessaoTitulo{
-	color: black;
+	color: rgb(245, 245, 245);
 }
 
 .tiposCategorias{
-	color: white;
+	color: #a09ea0;
 	line-height: 25px;
     cursor: pointer;
 }
 
 /*----------------------------*/
 
-/* Input de pesquisa */
-.campoPesquisa{
-    grid-column-start: 2;
-}
 
 /* Jogos de destaque */
 .destaquesTelaInicial{
     box-sizing: border-box;
 	border-radius: 5px;
-    background-color: #2a2a2a;
+    background-color: var(--backgroundSubMenu);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 10vh 10vh;
 }
 
 .tituloJogosDestaques{
-    margin: 20px 50px;
+    margin: 20px 15px;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -145,7 +159,7 @@
 
 .imagemDestaque-container{
     width: 600px;
-    height: 270px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -157,7 +171,7 @@
 
 .descricao{
     font-size: 18px;
-    line-break: anywhere;
+    margin: 0px 30px 0px 0px;
 }
 
 .valorDestaque{
@@ -250,16 +264,24 @@
 /*Categorias*/
 .categorias{
     grid-column-start: 2;
-    margin: 50px 15px;
+    /*margin: 0px 15px;*/
 }
+
 
 .carrossel-categorias{
     display: flex;
-    padding-right: 100px;
+}
+
+.carrosselCategoria-nomes{
+    margin: 0px 15px;
+}
+
+.categoriasNomes{
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 15px;
+    color: var(--subTitulo);
 }
 
 /*----------------------------*/
-
-
-
 

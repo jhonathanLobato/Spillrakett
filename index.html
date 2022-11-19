@@ -12,9 +12,12 @@
     <header class="cabecalhoPrincipal">
 		<div class="container">
 			<nav class="cabecalhoPrincipal-nav">
-                <img src="/icones/Menu.svg" alt="">
-                <input type="text"><a class="cabecalhoPrincipal-nav-link" href="#"><img src="/icones/Lupa.svg" alt=""></a>
+                <a class="cabecalhoPrincipal-nav-link" href="#"></a><img src="/icones/Menu.svg" alt="">
+                <a class="cabecalhoPrincipal-nav-link" href="#"></a><img src="/icones/Usuario.svg" alt="">
             </nav>
+            <section class="banner">
+                <input type="search" class="banner__pesquisa" placeholder="Pesquisar na Loja">
+            </section>
 			<nav class="cabecalhoPrincipal-nav">
 				<a class="cabecalhoPrincipal-nav-link" href="#"><img src="/icones/Compras.svg" alt=""></a>
 				<a class="cabecalhoPrincipal-nav-link" href="#"><img src="/icones/Favoritos.svg" alt=""></a>
@@ -46,14 +49,14 @@
                     <dd class="tiposCategorias">Nintendo</dd>
                 </section>
                 <section class="sessoesLateral">
-                    <a>Visto Recentimente</a>
+                    <a class="sessaoTitulo">Visto Recentimente</a>
                     <dd class="tiposCategorias">Euro Trank Simulator</dd>
                     <dd class="tiposCategorias">The King of Fighters XV</dd>
                 </section>
             </div>
             <!-- Jogos em destaques -->
             <div class="destaquesTelaInicial">
-                <h3 class="tituloJogosDestaques subTitulo">Jogos em Destaques</h3>
+                <h2 class="tituloJogosDestaques subTitulo">Jogos em Destaques</h2>
                 <div class="imagemDestaque">
                     <img class="imagemDestaque-container" src="/imagens sistema steam/Spider Man/Marvels-Spider-Man-Miles-Morales-analise-critica-review.jpg" alt="Video Homem Aranha Destaque">
                 </div>
@@ -113,7 +116,7 @@
                 </div>
             </div>
             <div class="vendasPromocao">
-                <h2 class="subTitulo">Promoção do Dia ></h2>
+                <h2 class="subTitulo">Promoção do Dia</h2>
                 <br>
                 <div class="carrossel">
                     <section class="carrosselImagens">
@@ -146,32 +149,43 @@
                             <a class="desconto-precoAtual">R$ 12,49</a>
                         </div>
                     </section>
+                    <section class="carrosselImagens">
+                        <img class="carrosselImagens-item" src="/imagens sistema steam/Doom 3/EGS_DOOM3_idSoftwarePanicButton_S2_1200x1600-ea552d0725a456dad637318dbf2f50c3.jpeg" alt="Euro Trank Simulator">
+                        <br>
+                        <p class="nomeJogo">DOOM 3</p>
+                        <div class="nomesPrecos">
+                            <a class="desconto">-60%</a>
+                            <s class="desconto-precoAntigo">R$ 39</s>
+                            <a class="desconto-precoAtual">R$ 15,60</a>
+                        </div>
+                    </section>
                 </div>
             </div>
             <div class="categorias">
                 <h2 class="subTitulo">Escolha Por Categoria</h2>
                 <br>
                 <div class="carrossel-categorias">
-                    <a class="carrosselImagens">
-                        <img class="carrosselImagens-item" src="/imagens sistema steam/Categorias/fighting_martial_arts.png" alt="The King of Fighters XV">
-                        <p>RPG</p>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">RPG</p>
                     </a>
-                    <section class="carrosselImagens">
-                        <img class="carrosselImagens-item" src="/imagens sistema steam/Categorias/simulation.png" alt="The King of Fighters XV">
-                        <p>Simulador</p>
-                    </section>
-                    <section class="carrosselImagens">
-                        <img class="carrosselImagens-item" src="/imagens sistema steam/Categorias/sports.png" alt="The King of Fighters XV">
-                        <p>Esporte</p>
-                    </section>
-                    <section class="carrosselImagens">
-                        <img class="carrosselImagens-item" src="/imagens sistema steam/Categorias/survival.png" alt="The King of Fighters XV">
-                        <p>Survival</p>
-                    </section>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">Simulador</p>
+                    </a>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">Esporte</p>
+                    </a>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">Survival</p>
+                    </a>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">Jogos Retro</p>
+                    </a>
+                    <a class="carrosselCategoria-nomes" href="#">
+                        <p class="categoriasNomes">Indie</p>
+                    </a>
                 </div>
             </div>
         </div>
-
     </main>
 </body>
 </html>
