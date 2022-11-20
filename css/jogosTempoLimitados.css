@@ -1,0 +1,12 @@
+/* Container dos jogos por tempo limitado*/
+.jogosGratis{
+    grid-column-start: 2;
+    margin: 0px 15px;
+}
+
+.desconto-gratis{
+    background-color: var(--corDescontoBack);
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: 0px;
+}

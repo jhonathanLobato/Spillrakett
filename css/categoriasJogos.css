@@ -1,0 +1,21 @@
+/*Categorias*/
+.categorias{
+    grid-column-start: 2;
+    /*margin: 0px 15px;*/
+}
+
+
+.carrossel-categorias{
+    display: flex;
+}
+
+.carrosselCategoria-nomes{
+    margin: 0px 15px;
+}
+
+.categoriasNomes{
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 15px;
+    color: var(--subTitulo);
+}

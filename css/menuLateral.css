@@ -1,0 +1,22 @@
+/* Menu lateral */
+/* Adicionando um efeito vidro no menu */
+.menuLateral{
+	height: 650px;
+	margin: 0px 20px;
+    background: rgb(32, 32, 32);
+    border-radius: 15px;
+}
+
+.sessoesLateral{
+	margin: 15px 10px 10px 10px;
+}
+
+.sessaoTitulo{
+	color: rgb(245, 245, 245);
+}
+
+.tiposCategorias{
+	color: #a09ea0;
+	line-height: 25px;
+    cursor: pointer;
+}

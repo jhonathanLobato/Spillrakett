@@ -1,0 +1,6 @@
+/* Container dos jogos da biblioteca*/
+.meusJogos{
+    /*width: 80%;*/
+    margin: 30px 20px;
+    grid-column-start: 2;
+}

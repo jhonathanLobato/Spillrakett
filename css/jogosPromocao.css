@@ -1,0 +1,50 @@
+/* Conatiner da venda em promoção */
+.vendasPromocao{
+    grid-column-start: 2;
+    margin: 50px 15px;
+    max-width: 900px;
+    padding: 0px;
+}
+
+/* Essa função quebra a lista e não deixa que ela fique maior que o tamanho maximo definido */
+.carrossel{
+    overflow-x: auto;
+}
+
+
+.nomesPrecos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desconto{
+    font-size: 15px;
+    color: #dee9f3;
+    /*
+    box-sizing: border-box;
+	border: 1.5px solid #000000;
+	border-radius: 5px;
+    */
+    background-color: var(--corDescontoBack);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.desconto-precoAntigo{
+    color: #7a7a7a;
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+.desconto-precoAtual{
+    color: #f5f5f5;
+    font-size: 19px;
+    margin-top: 0px;
+    /*
+    box-sizing: border-box;
+	border: 1.5px solid #000000;
+	border-radius: 5px;
+    background-color: gray;
+    */
+}

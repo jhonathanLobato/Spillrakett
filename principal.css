@@ -1,4 +1,12 @@
 @import url(css/styles.css);
+@import url(css/header.css);
+@import url(css/jogosDestaques.css);
+@import url(css/menuLateral.css);
+@import url(css/jogosDestaques.css);
+@import url(css/jogosSalvos.css);
+@import url(css/jogosTempoLimitados.css);
+@import url(css/jogosPromocao.css);
+@import url(css/categoriasJogos.css);
 
 :root {
     --cor-de-fundo: #121212;

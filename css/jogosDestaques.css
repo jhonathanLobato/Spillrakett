@@ -1,0 +1,58 @@
+/* Jogos de destaque */
+.destaquesTelaInicial{
+    box-sizing: border-box;
+	border-radius: 5px;
+    background-color: var(--backgroundSubMenu);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10vh 10vh;
+}
+
+.tituloJogosDestaques{
+    margin: 20px 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.imagemDestaque{
+    margin: 0px 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.descricaoDestaque{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-right: 35px;
+}
+
+.imagemDestaque-container{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tituloDestaque{
+    color: #f4f4f4;
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+.descricao{
+    font-size: 18px;
+    margin: 0px 30px 0px 0px;
+}
+
+.valorDestaque{
+    color: #fefefe;
+    font-size: 17px;
+}
+
+.comprarDestaque{
+    font-size: 20px;
+    background-color: #fefefe;
+    padding: 7px 7px;
+    border-radius: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+}
